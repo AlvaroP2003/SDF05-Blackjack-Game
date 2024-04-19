@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-blur : rgba(43, 43, 43,0.7);
+}
+
+img {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+}
+body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url(blackjack_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position:relative;
+    background-color: var(--main-blur);
+    height: 500px;
+    width: 600px;
+}
+
+.container h1 {
+    font-size: 60px;
+    color: goldenrod;
+    background-color: black;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid goldenrod 2px;
+}
+
+#message-el {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+#cards-el , #sum-el {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    height: 70px;
+}
+
+.btns-sec {
+    text-align: center;
+}
+
+.btns {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    align-self: center;
+    width: 230px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.651);
+    border: solid rgb(196, 165, 28);
+    border-radius: 10px;
+    padding: 10px 15px;
+
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.btns:hover {
+    background-color: rgb(167, 2, 2);
+}
+
+#player-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    color:white;
+    background-color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    height: 50px;
+    bottom: 0px;
+    width: 100%;
+}
